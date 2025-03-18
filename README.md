@@ -1,3 +1,3 @@
 # WebDev Practice
 
-[WebDev](https://github.com/chetanrakheja/WebDev)
+[WebDev](https://webdev.chetanrakheja.com/)
