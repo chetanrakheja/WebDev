@@ -2,9 +2,9 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import db from "./utils/db.js";
-
+import cookieParser from "cookie-parser";
 //import all routes
-import userRoutes from "./routes/user.routes.js"
+import userRoutes from "./routes/user.routes.js";
 
 dotenv.config();
 
@@ -20,6 +20,7 @@ app.use(
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 const port = process.env.PORT || 4000;
 
@@ -39,7 +40,7 @@ app.get("/piyush", (req, res) => {
 db();
 
 //user routes
-app.use("/api/v1/users/", userRoutes)
+app.use("/api/v1/users", userRoutes);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
