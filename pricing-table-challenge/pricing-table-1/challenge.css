@@ -1,0 +1,132 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(0deg 0% 96.08%);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+ 
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+  
+}
+
+h1 {
+  /* Add your styles here */
+  text-align: center;
+}
+
+.pricing-heading {
+
+  /* Add your styles here */
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: space-between;
+  
+  
+  /* Add your styles here */
+}
+
+.pricing-card {
+  /* Add your styles here */
+  padding: 20px;
+  margin: auto;
+  background-color: white;
+  /* border: 2px black solid; */
+  border-radius: 15px;
+  max-width: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  justify-items: center;
+  position: relative;
+  
+}
+
+.pricing-card h2{
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  background-color: white;
+}
+
+.pricing-card:hover {
+  /* Add your styles here */
+}
+
+.pricing-card.popular {
+  /* Add your styles here */
+  border:orange 2px solid;
+}
+
+.popular-badge {
+  /* Add your styles here */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: orange;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.price {
+  /* Add your styles here */
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  background-color: white;
+}
+
+.period {
+  /* Add your styles here */
+  text-align: center;
+  font-size: large;
+  background-color: white;
+}
+
+.features {
+  /* Add your styles here */
+  text-align: center;
+  align-items: center;
+  list-style: image("./assets/chaicodelogo.png");
+  
+}
+
+.features li {
+  list-style: image("./assets/chaicodelogo.png");
+  padding: 5px;
+  background-color: white;
+  /* /* Add your styles here */
+  list-style: none;
+  list-style: image("./assets/chaicodelogo.png");
+
+}
+
+.subscribe-btn {
+  /* Add your styles here */
+  padding: 10px;
+  border-radius: 25px;
+  background: orange;
+  border: orange;
+  color: black;
+  margin: 15px;
+  cursor: pointer;
+
+}
+
+.subscribe-btn:hover {
+  /* Add your styles here */
+}
